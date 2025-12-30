@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="UTF-8">
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Prática #5 - Herança e Poliformismo</title>
     </head>
     <body>
-        <h1>Lógica de programação em JavaScript</h1>
-        <p>Conjunto de exercícios práticos em JavaScript desenvolvendo estruturas de repetição e problemas
-            lógicos e matemáticos, traçando meu desenvolvimento em Front-End.
+        <h2>Cadastrar Animais</h2>
+        <p>Clique em uma figura para cadastrar um animal:</p>
+        <div id="fig_animais">
+            <img src="cachorro.png" alt="Figura de Cachorro" id="cachorro" class="animais">
+            <img src="gato.png" alt="Figura de Gato" id="gato" class="animais">
+            <img src="pássaro.png" alt="Figura de Pássaro" id="pássaro" class="animais">
+            <img src="outros.png" alt="Figura de Macaco" id="outros">
+        </div>
+        <div id="cadastro"></div>
+        <p>A presente página tem como objetivo praticar as relações de herança e 
+        poliformismo entre superclasse e subclasse em JavaScript. Foi solicitada
+        a criação de uma superclasse Animal, com propriedades de nome e número de patas.
+        Subclasses de Cachorro, Gato e Pássaro também foram criadas, herdando características
+        e sobreescrevendo o método de "EmitirSom()" com as devidas onomatopeias referentes a cada
+        animal. Em complemento ao exercício, criei uma página simples, com um menu interativo, e 
+        estilizada com CSS - colocando em prática transições, hover e flexbox.
         </p>
-        <br>
-        <p id="resultado">Resultado: </p>
-
-        <script src="exercicio02-estruturas-de-repeticao.js"></script>
     </body>
 </html>
